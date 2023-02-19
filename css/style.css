@@ -13,6 +13,10 @@ body{
   color: #444;
 }
 
+*:focus{
+  outline: 2px dotted #de2e54;
+  outline-offset: 2px;
+}
 
 /* Container */
 .container{
@@ -22,4 +26,98 @@ body{
   padding-left: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.site-header{
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.site-header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #222;
+  text-decoration: none;
+}
+
+.site-header-logo{
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+
+.site-header-logo:hover{
+  color: #de2e54;
+}
+
+.site-header-logo-img{
+  margin-right: 16px;
+}
+
+.site-header-logo:active{
+  opacity: 0.6;
+}
+
+.sitenav{
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
+.sitenav-list{
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sitenav-item:not(:last-child){
+  margin-right: 32px;
+}
+
+.sitenav-link{
+  display: block;
+  color: #222;
+  text-decoration: none;
+}
+
+.sitenav-link:hover{
+  color: #de2e54;
+}
+
+.sitenav-link:active{
+  opacity: 0.6;
+}
+
+
+.main-link{
+  display: inline-block;
+  padding: 10px 22px;
+  border: 2px solid #de2e54;
+  border-radius: 8px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  text-decoration: none;
+  background-color: #de2e54;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.main-link:hover{
+  border-color: #de2e54;
+  background-color: #fff;
+  color: #de2e54;
+}
+
+.main-link:active{
+  background-color: #de2e54;
+  color: #fff;
+  opacity: 0.6;
 }
